@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main class="play" id="a1">
+      <h1 class="begin">🎲 roll the dice game</h1> 
+      <h2 class="begine"> Test your luck!</h2>
+      <img src="one-die-7495-bdbaccf577c7e7004519974681450a93@2x.jpg" alt="Playing dice"  class="dice-" id="dice--3" />
+      <h2 class="beginne"> Rules</h2>
+      <div class="lists">
+        <li class="beginner"> If a player rolls a one, he looses his turn</li>
+        <li class="beginner"> If a six is consecutively rolled on a particular die, he looses his turn</li>
+        <li class="beginner"> The first player to reach the threshold score becomes the winner</li>
+      </div>
+      <!--<button class="btn btn--play"><a href="input.html" id="a">🔄 Play game</a></button>-->
+      <button class="btn btn--play" id="a">🔄 Play game</button>
+    </main>
+    <main class="play" id="a2">
+      <h1 class="begin">🎲 roll the dice game</h1> 
+      <h2 class="begine"> Test your luck!</h2>
+      <img src="one-die-7495-bdbaccf577c7e7004519974681450a93@2x.jpg" alt="Playing dice"  class="dice-" id="dice--3" />
+      <h2 class="beginne"> Select the bench-mark score</h2>
+        <div>
+            <input type="number" id="input" placeholder="Enter the winning score">
+            <br>
+            <button id="btn--select">Select</button>
+        </div>
+    </main>
+    <main class="d" id="a3">
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">First player</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Second player</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      <div class="npa">
+        <div>
+          <img src="one-die-7495-bdbaccf577c7e7004519974681450a93@2x.jpg" alt="Playing dice"  class="dice" id="dice--0" />
+        </div>
+        <div>
+          <img src="one-die-7495-bdbaccf577c7e7004519974681450a93@2x.jpg" alt="Playing dice"  class="dice" id="dice--1" />
+        </div>
+      </div>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll the die</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--exit"><span id="x"> X</span><span> Exit</span></button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
